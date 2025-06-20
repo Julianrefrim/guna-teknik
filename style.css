@@ -38,8 +38,6 @@ body {
 .logo-text {
   font-size: 0.9rem;
   color: #111;
-  display: inline-block;
-  cursor: pointer;
 }
 
 .logo-link {
@@ -48,6 +46,16 @@ body {
 
 .logo-link img {
   cursor: pointer;
+}
+
+.logo-text-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.logo-text-link:hover {
+  color: #0077cc;
 }
 
 .nav-menu {
