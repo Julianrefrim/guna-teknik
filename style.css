@@ -220,4 +220,13 @@ footer {
   .hero h1 {
     font-size: 2rem;
   }
+
+  .layanan-text {
+    text-align: center;
+  }
+
+  .layanan-image {
+    margin-top: 1.5rem;
+  }
 }
+
