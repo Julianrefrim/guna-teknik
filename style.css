@@ -38,6 +38,8 @@ body {
 .logo-text {
   font-size: 0.9rem;
   color: #111;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .logo-link {
