@@ -224,29 +224,24 @@ body {
 }
 
 /* Company info*/
-.company-info {
-  background-color: #1e1e1e;
-  color: white;
-  padding: 3rem 1rem;
-  text-align: center;
+.mini-company-info {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  color: #111;
 }
 
-.company-container {
-  max-width: 600px;
-  margin: auto;
+.mini-company-info img {
+  height: 40px;
+  width: auto;
 }
-
-.company-logo {
-  width: 200px;
-  margin-bottom: 1.5rem;
-}
-
-.company-details p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0.5rem 0;
-}
-
 /* === FOOTER === */
 footer {
   text-align: center;
