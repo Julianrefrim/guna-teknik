@@ -223,25 +223,6 @@ body {
   background-color: #005fa3;
 }
 
-/* Company info*/
-.mini-company-info {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  font-size: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  color: #111;
-}
-
-.mini-company-info img {
-  height: 40px;
-  width: auto;
-}
 /* === FOOTER === */
 footer {
   text-align: center;
