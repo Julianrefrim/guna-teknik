@@ -40,6 +40,14 @@ body {
   color: #111;
 }
 
+.logo-link {
+  display: inline-block;
+}
+
+.logo-link img {
+  cursor: pointer;
+}
+
 .nav-menu {
   list-style: none;
   display: flex;
