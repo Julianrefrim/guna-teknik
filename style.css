@@ -223,6 +223,30 @@ body {
   background-color: #005fa3;
 }
 
+/* Company info*/
+.company-info {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.company-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.company-logo {
+  width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.company-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
 /* === FOOTER === */
 footer {
   text-align: center;
