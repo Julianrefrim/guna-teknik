@@ -160,6 +160,33 @@ footer {
   text-decoration: underline;
 }
 
+.layanan {
+  padding: 4rem 1rem;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.layanan-header h2 {
+  font-size: 2.5rem;
+  color: #0a192f;
+  margin-bottom: 1rem;
+}
+
+.layanan-header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.layanan-image img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 /* Responsif */
 @media (max-width: 768px) {
   .navbar {
