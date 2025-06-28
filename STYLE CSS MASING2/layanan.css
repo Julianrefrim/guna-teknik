@@ -1,0 +1,37 @@
+
+/* layanan.css */
+.layanan {
+  padding: 4rem 1rem;
+  background-color: #f8f9fa;
+}
+.layanan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+.layanan-text {
+  flex: 1 1 50%;
+}
+.layanan-text h2 {
+  font-size: 2.5rem;
+  color: #0a192f;
+  margin-bottom: 1rem;
+}
+.layanan-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+.layanan-image {
+  flex: 1 1 45%;
+}
+.layanan-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
