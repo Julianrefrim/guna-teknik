@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Proyek - PT Guna Teknik Perkasa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -25,43 +25,45 @@
     </div>
   </header>
 
-  <!-- Proyek Kami -->
-  <section class="projects">
-    <div class="container" data-aos="fade-up">
-      <h1>Proyek Kami</h1>
-      <p>Beberapa proyek unggulan yang telah kami kerjakan:</p>
+  <!-- Proyek Section -->
+  <section class="project-preview" data-aos="fade-up">
+    <div class="container">
+      <h2>Proyek Kami</h2>
+      <p class="subtitle">Beberapa proyek yang telah kami selesaikan</p>
       <div class="project-grid">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card" data-aos="zoom-in">
           <img src="image/sutet.png" alt="Proyek Wilmar Group">
-          <h3>Wilmar Group - SUTET</h3>
+          <h3>Wilmar Group</h3>
+          <p>Instalasi kelistrikan untuk pabrik pengolahan CPO.</p>
         </div>
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <img src="image/1.png" alt="Proyek 1">
-          <h3>Pabrik Kimia - Tangerang</h3>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="image/1.png" alt="Proyek PLN Substation">
+          <h3>PLN Substation</h3>
+          <p>Pembangunan gardu induk dan sistem distribusi 20kV.</p>
         </div>
-        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <img src="image/2.png" alt="Proyek 2">
-          <h3>Gudang PLN - Serang</h3>
-        </div>
-        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-          <img src="image/3.png" alt="Proyek 3">
-          <h3>Gedung Sekolah - Cilegon</h3>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="image/2.png" alt="Proyek Industri Baja">
+          <h3>Pabrik Baja</h3>
+          <p>Instalasi sistem kelistrikan pabrik rolling mill dan produksi.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer data-aos="fade-up">
+  <footer>
     <div class="container">
-      <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
+      <p>&copy; 2025 PT Guna Teknik Perkasa</p>
     </div>
   </footer>
 
   <!-- AOS Script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   </script>
 
 </body>
