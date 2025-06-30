@@ -164,6 +164,11 @@ body {
   margin-bottom: 0.8rem;
   color: #0077cc;
 }
+.layanan-icon {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
 /* #endregion */
 
 /* #region Proyek */
