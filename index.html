@@ -5,29 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PT Guna Teknik Perkasa</title>
 
-  <!-- Hubungkan semua file CSS -->
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/layanan.css" />
-  <link rel="stylesheet" href="css/proyek.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- Menghubungkan satu file CSS gabungan -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <!-- Navbar -->
   <header class="navbar">
-  <div class="logo-area">
-    <a href="index.html" class="logo-link">
-      <img src="image/logo.png" alt="logo" class="logo-img" />
-  </a>
-  <a href="index.html" class="logo-text-link">
-  <div class="logo-text">
-      <strong>PT GUNA TEKNIK PERKASA</strong><br />
-      <small>Electrical Construction Company</small>
+    <div class="logo-area">
+      <a href="index.html" class="logo-link">
+        <img src="image/logo.png" alt="Logo PT Guna Teknik Perkasa" class="logo-img" />
+        <div class="logo-text">
+          <strong>PT GUNA TEKNIK PERKASA</strong><br />
+          <small>Electrical Construction Company</small>
+        </div>
+      </a>
     </div>
-  </a>
-</div>
     <nav>
       <ul class="nav-menu">
         <li><a href="index.html" class="active">Beranda</a></li>
@@ -39,12 +32,15 @@
   </header>
 
   <main>
+
+    <!-- Hero Section -->
     <section class="hero">
       <h1>KONTRAKTOR LISTRIK TERKEMUKA</h1>
       <p>Solusi kelistrikan untuk industri dan bangunan sejak 2012</p>
       <a href="tentang.html" class="cta">Tentang Kami</a>
     </section>
-
+    
+    <!-- Layanan Section -->
     <section class="layanan">
       <div class="layanan-container">
         <div class="layanan-text">
@@ -55,17 +51,18 @@
           </p>
         </div>
         <div class="layanan-image">
-          <img src="image/layanan.png" alt="Layanan Kami">
+          <img src="image/layanan.png" alt="Gambar ilustrasi layanan kelistrikan">
         </div>
       </div>
     </section>
 
+    <!-- Proyek Section -->
     <section class="project-preview">
       <h2>PROJECT PREVIEW</h2>
       <p class="subtitle">Berikut project yang sudah kami selesaikan</p>
       <div class="project-grid">
         <div class="project-card">
-          <img src="image/sutet.png" alt="Proyek Listrik">
+          <img src="image/sutet.png" alt="Proyek Wilmar Group - Sutet" />
           <h3>WILMAR GROUP</h3>
         </div>
       </div>
@@ -73,6 +70,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 PT Guna Teknik Perkasa</p>
   </footer>
