@@ -5,45 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tentang - PT Guna Teknik Perkasa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
   <!-- Navbar -->
-  <header class="navbar">
+  <header class="navbar" data-aos="fade-down">
     <div class="container">
       <div class="logo">PT Guna Teknik Perkasa</div>
       <nav>
         <ul class="nav-menu">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang.html" class="active">Tentang</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Tentang Section -->
+  <!-- Tentang Kami -->
   <section class="about-page">
-    <div class="container">
-      <h1>Tentang Perusahaan</h1>
-      <p>
-        PT Guna Teknik Perkasa berdiri sejak 2012 dan telah menjadi salah satu kontraktor listrik terpercaya di Indonesia.
-        Kami memiliki pengalaman dalam menangani berbagai proyek kelistrikan skala besar dari industri hingga gedung komersial.
-      </p>
-      <p>
-        Kami berkomitmen untuk memberikan layanan terbaik melalui profesionalisme, keamanan kerja, dan penggunaan teknologi terkini.
-      </p>
+    <div class="container" data-aos="fade-up">
+      <h1>Tentang PT Guna Teknik Perkasa</h1>
+      <p>Didirikan pada tahun 2012, PT Guna Teknik Perkasa telah menjadi perusahaan kontraktor listrik terpercaya di Indonesia. Kami fokus pada instalasi, perawatan, dan desain sistem kelistrikan untuk sektor industri, komersial, dan publik.</p>
+      <p>Dengan tim profesional dan berpengalaman, kami menjamin kualitas dan keamanan pada setiap proyek yang kami kerjakan.</p>
+      <p>Komitmen kami adalah memberikan solusi terbaik, hemat energi, dan efisien untuk memenuhi kebutuhan klien kami.</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer data-aos="fade-up">
     <div class="container">
-      <p>&copy; 2025 PT Guna Teknik Perkasa</p>
+      <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 
 </body>
 </html>

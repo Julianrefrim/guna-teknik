@@ -5,71 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PT Guna Teknik Perkasa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- #region Navbar -->
   <header class="navbar" data-aos="fade-down">
     <div class="container">
       <div class="logo">PT Guna Teknik Perkasa</div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#tentang">Tentang</a></li>
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <!-- #endregion -->
 
-  <!-- Hero Section -->
-  <section class="hero" data-aos="fade-up">
-    <div class="hero-text">
+  <!-- #region Hero -->
+  <section class="hero" data-aos="zoom-in">
+    <div class="container hero-text">
       <h1>Solusi Konstruksi Elektrikal Profesional</h1>
       <p>Memberikan layanan kelistrikan terbaik untuk industri dan bangunan sejak 2012</p>
     </div>
   </section>
+  <!-- #endregion -->
 
-  <!-- Tentang -->
+  <!-- #region Tentang -->
   <section class="about" id="tentang">
     <div class="container" data-aos="fade-up">
       <h2>Tentang Kami</h2>
-      <p>PT Guna Teknik Perkasa merupakan perusahaan kontraktor listrik berpengalaman dalam instalasi dan pemeliharaan kelistrikan industri dan bangunan umum.</p>
+      <p>PT Guna Teknik Perkasa adalah kontraktor listrik yang berpengalaman dalam instalasi dan perawatan sistem kelistrikan untuk industri, bangunan komersial, dan fasilitas umum.</p>
     </div>
   </section>
+  <!-- #endregion -->
 
-  <!-- Layanan -->
+  <!-- #region Layanan -->
   <section class="layanan" id="layanan">
-    <div class="container">
-      <h2 data-aos="fade-up">Layanan Kami</h2>
+    <div class="container" data-aos="fade-up">
+      <h2>Layanan Kami</h2>
       <div class="layanan-grid">
-        <div class="layanan-item" data-aos="zoom-in" data-aos-delay="100">
+        <div class="layanan-item" data-aos="fade-right">
           <h3>Instalasi Listrik</h3>
-          <p>Pemasangan sistem kelistrikan untuk industri dan bangunan komersial.</p>
+          <p>Pemasangan sistem kelistrikan industri dan bangunan komersial.</p>
         </div>
-        <div class="layanan-item" data-aos="zoom-in" data-aos-delay="200">
+        <div class="layanan-item" data-aos="fade-up">
           <h3>Pemeliharaan</h3>
-          <p>Perawatan dan perbaikan sistem listrik untuk mencegah kerusakan.</p>
+          <p>Perawatan dan perbaikan sistem kelistrikan secara berkala.</p>
         </div>
-        <div class="layanan-item" data-aos="zoom-in" data-aos-delay="300">
+        <div class="layanan-item" data-aos="fade-left">
           <h3>Panel & Distribusi</h3>
-          <p>Pembuatan panel listrik dan sistem distribusi daya.</p>
+          <p>Pembuatan panel listrik dan sistem distribusi tenaga.</p>
         </div>
       </div>
     </div>
   </section>
+  <!-- #endregion -->
 
-  <!-- Footer -->
+  <!-- #region Footer -->
   <footer id="kontak" data-aos="fade-up">
     <div class="container">
-      <p>&copy; 2025 PT Guna Teknik Perkasa</p>
+      <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
     </div>
   </footer>
+  <!-- #endregion -->
 
-  <!-- AOS Script -->
+  <!-- #region Script AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -77,5 +82,7 @@
       once: true
     });
   </script>
+  <!-- #endregion -->
+
 </body>
 </html>

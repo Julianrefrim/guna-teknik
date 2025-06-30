@@ -5,41 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kontak - PT Guna Teknik Perkasa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
   <!-- Navbar -->
-  <header class="navbar">
+  <header class="navbar" data-aos="fade-down">
     <div class="container">
       <div class="logo">PT Guna Teknik Perkasa</div>
       <nav>
         <ul class="nav-menu">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang.html">Tentang</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
           <li><a href="kontak.html" class="active">Kontak</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Kontak Section -->
-  <section class="kontak-page">
-    <div class="container">
+  <!-- Kontak Kami -->
+  <section class="contact-page">
+    <div class="container" data-aos="fade-up">
       <h1>Hubungi Kami</h1>
-      <p><strong>Alamat:</strong> Pondok Cilegon Indah Blok C 59 No. 19, RT/RW 004/007, Harjatani, Kramatwatu, Serang, Banten 42161</p>
-      <p><strong>Email:</strong> <a href="mailto:gunateknikperkasa01@gmail.com">gunateknikperkasa01@gmail.com</a></p>
-      <p><strong>Telepon:</strong> <a href="tel:0254-3883897">0254-3883897</a></p>
+      <p>Silakan hubungi kami melalui informasi di bawah ini:</p>
+
+      <div class="contact-info">
+        <p><strong>Alamat:</strong><br>
+        Pondok Cilegon Indah Blok C 59 No. 19, RT/RW 004/007,<br>
+        Harjatani, Kramatwatu, Serang, Banten 42161</p>
+
+        <p><strong>Email:</strong><br>
+        <a href="mailto:gunateknikperkasa01@gmail.com">gunateknikperkasa01@gmail.com</a></p>
+
+        <p><strong>Telepon:</strong><br>
+        <a href="tel:02543883897">0254-3883897</a></p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer data-aos="fade-up">
     <div class="container">
-      <p>&copy; 2025 PT Guna Teknik Perkasa</p>
+      <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 
 </body>
 </html>
