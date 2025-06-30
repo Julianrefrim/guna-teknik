@@ -31,6 +31,16 @@
   color: #111;
   line-height: 1.3;
 }
+
+.logo-text-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-text-link:hover {
+  color: #0077cc;
+}
+
 .logo-link:hover .logo-text {
   color: #0077cc;
 }
