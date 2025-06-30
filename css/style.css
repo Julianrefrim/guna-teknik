@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+[data-aos] {
+  will-change: opacity, transform;
+}
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
