@@ -4,85 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PT Guna Teknik Perkasa</title>
+
+  <!-- Font & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
-  <!-- #region Navbar -->
+  <!-- Navbar -->
   <header class="navbar" data-aos="fade-down">
     <div class="container">
       <div class="logo">PT Guna Teknik Perkasa</div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="index.html" class="active">Beranda</a></li>
-          <li><a href="tentang.html">Tentang</a></li>
-          <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <!-- #endregion -->
 
-  <!-- #region Hero -->
-  <section class="hero" data-aos="zoom-in">
-    <div class="container hero-text">
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade">
+    <div class="hero-text">
       <h1>Solusi Konstruksi Elektrikal Profesional</h1>
       <p>Memberikan layanan kelistrikan terbaik untuk industri dan bangunan sejak 2012</p>
     </div>
   </section>
-  <!-- #endregion -->
 
-  <!-- #region Tentang -->
+  <!-- Tentang Kami -->
   <section class="about" id="tentang">
     <div class="container" data-aos="fade-up">
       <h2>Tentang Kami</h2>
-      <p>PT Guna Teknik Perkasa adalah kontraktor listrik yang berpengalaman dalam instalasi dan perawatan sistem kelistrikan untuk industri, bangunan komersial, dan fasilitas umum.</p>
+      <p>PT Guna Teknik Perkasa adalah kontraktor listrik yang melayani proyek industri, komersial, dan bangunan umum dengan standar tinggi dan tenaga profesional.</p>
     </div>
   </section>
-  <!-- #endregion -->
 
-  <!-- #region Layanan -->
+  <!-- Layanan -->
   <section class="layanan" id="layanan">
-    <div class="container" data-aos="fade-up">
-      <h2>Layanan Kami</h2>
+    <div class="container">
+      <h2 data-aos="fade-up">Layanan Kami</h2>
       <div class="layanan-grid">
-        <div class="layanan-item" data-aos="fade-right">
+        <div class="layanan-item" data-aos="fade-up" data-aos-delay="100">
           <h3>Instalasi Listrik</h3>
-          <p>Pemasangan sistem kelistrikan industri dan bangunan komersial.</p>
+          <p>Pemasangan sistem kelistrikan untuk industri dan bangunan komersial.</p>
         </div>
-        <div class="layanan-item" data-aos="fade-up">
+        <div class="layanan-item" data-aos="fade-up" data-aos-delay="200">
           <h3>Pemeliharaan</h3>
-          <p>Perawatan dan perbaikan sistem kelistrikan secara berkala.</p>
+          <p>Perawatan dan perbaikan sistem listrik untuk mencegah kerusakan.</p>
         </div>
-        <div class="layanan-item" data-aos="fade-left">
+        <div class="layanan-item" data-aos="fade-up" data-aos-delay="300">
           <h3>Panel & Distribusi</h3>
-          <p>Pembuatan panel listrik dan sistem distribusi tenaga.</p>
+          <p>Pembuatan panel listrik dan sistem distribusi daya sesuai kebutuhan.</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- #endregion -->
 
-  <!-- #region Footer -->
+  <!-- Footer -->
   <footer id="kontak" data-aos="fade-up">
     <div class="container">
       <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
     </div>
   </footer>
-  <!-- #endregion -->
 
-  <!-- #region Script AOS -->
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1000,
+      duration: 700,
+      easing: 'ease-out-cubic',
       once: true
     });
   </script>
-  <!-- #endregion -->
-
 </body>
 </html>
