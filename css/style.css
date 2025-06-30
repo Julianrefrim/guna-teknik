@@ -48,7 +48,8 @@ body {
   color: #0a192f;
 }
 .logo-icon {
-  height: 28px;
+  height: 35px;
+  width: auto;
 }
 .nav-menu {
   list-style: none;
