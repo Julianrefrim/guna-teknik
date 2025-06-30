@@ -11,7 +11,17 @@
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Script Hamburger Menu -->
+  <script>
+  const toggleBtn = document.getElementById('nav-toggle');
+  const nav = document.getElementById('nav');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+    <!-- Navbar -->
   <header class="navbar">
     <div class="logo-area">
       <a href="index.html" class="logo-link">
@@ -22,7 +32,8 @@
         </span>
       </a>
     </div>
-    <nav>
+    <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+    <nav class="nav" id="nav">
       <ul class="nav-menu">
         <li><a href="index.html" class="active">Beranda</a></li>
         <li><a href="tentang.html">Tentang</a></li>
@@ -31,8 +42,7 @@
       </ul>
     </nav>
   </header>
-
-  <main>
+    <main>
 
     <!-- Hero Section -->
     <section class="hero" aria-label="Hero">
