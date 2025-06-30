@@ -193,6 +193,17 @@ footer {
 }
 /* #endregion */
 
+/* #region Layout Fix */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+/* #endregion */
+
 /* #region Responsive */
 @media (max-width: 768px) {
   .hero-text h1 {
