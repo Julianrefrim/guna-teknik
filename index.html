@@ -11,12 +11,12 @@
 <body>
 
   <!-- Navbar -->
-  <header class="navbar" data-aos="fade-down">
+  <header class="navbar">
     <div class="container">
-      <div class="logo">
-        <img src="image/logo.png" alt="Logo GTP" class="logo-icon">
-        <span>PT Guna Teknik Perkasa</span>
-      </div>
+      <a href="index.html" class="logo-link">
+        <img src="image/logo.png" alt="Logo PT GTP" class="logo-img" />
+        <span class="logo-text">PT Guna Teknik Perkasa</span>
+      </a>
       <nav>
         <ul class="nav-menu">
           <li><a href="#">Beranda</a></li>
@@ -45,19 +45,19 @@
   </section>
 
   <!-- Layanan -->
-  <section class="layanan" id="layanan">
+  <section class="layanan" id="layanan" data-aos="fade-up">
     <div class="container">
-      <h2 data-aos="fade-up">Layanan Kami</h2>
+      <h2>Layanan Kami</h2>
       <div class="layanan-grid">
-        <div class="layanan-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="layanan-item">
           <h3>Instalasi Listrik</h3>
           <p>Pemasangan sistem kelistrikan untuk industri dan bangunan komersial.</p>
         </div>
-        <div class="layanan-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="layanan-item">
           <h3>Pemeliharaan</h3>
           <p>Perawatan dan perbaikan sistem listrik untuk mencegah kerusakan.</p>
         </div>
-        <div class="layanan-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="layanan-item">
           <h3>Panel & Distribusi</h3>
           <p>Pembuatan panel listrik dan sistem distribusi daya.</p>
         </div>
@@ -76,10 +76,9 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 800,
+      duration: 1000,
       once: true
     });
   </script>
-
 </body>
 </html>
