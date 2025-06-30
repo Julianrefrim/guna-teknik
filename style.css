@@ -248,7 +248,7 @@ footer {
 }
 /* #endregion */
 
-/* #region aos.css tambahan */
+/* #region aos.css */
 [data-aos] {
   transition-property: opacity, transform;
 }
