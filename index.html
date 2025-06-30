@@ -14,12 +14,12 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="image/logo.png" alt="Logo PT GTP" class="logo-img" />
+        <img src="image/logo.png" alt="Logo" class="logo-img" />
         <span class="logo-text">PT Guna Teknik Perkasa</span>
       </a>
       <nav>
         <ul class="nav-menu">
-          <li><a href="#">Beranda</a></li>
+          <li><a href="#hero">Beranda</a></li>
           <li><a href="#tentang">Tentang</a></li>
           <li><a href="#layanan">Layanan</a></li>
           <li><a href="#kontak">Kontak</a></li>
@@ -28,15 +28,15 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" data-aos="fade-up">
+  <!-- Hero -->
+  <section class="hero" id="hero" data-aos="fade-up">
     <div class="hero-text">
       <h1>Solusi Konstruksi Elektrikal Profesional</h1>
       <p>Memberikan layanan kelistrikan terbaik untuk industri dan bangunan sejak 2012</p>
     </div>
   </section>
 
-  <!-- Tentang Kami -->
+  <!-- Tentang -->
   <section class="about" id="tentang" data-aos="fade-up">
     <div class="container">
       <h2>Tentang Kami</h2>
@@ -49,15 +49,15 @@
     <div class="container">
       <h2>Layanan Kami</h2>
       <div class="layanan-grid">
-        <div class="layanan-item">
+        <div class="layanan-item" data-aos="zoom-in">
           <h3>Instalasi Listrik</h3>
           <p>Pemasangan sistem kelistrikan untuk industri dan bangunan komersial.</p>
         </div>
-        <div class="layanan-item">
+        <div class="layanan-item" data-aos="zoom-in" data-aos-delay="100">
           <h3>Pemeliharaan</h3>
           <p>Perawatan dan perbaikan sistem listrik untuk mencegah kerusakan.</p>
         </div>
-        <div class="layanan-item">
+        <div class="layanan-item" data-aos="zoom-in" data-aos-delay="200">
           <h3>Panel & Distribusi</h3>
           <p>Pembuatan panel listrik dan sistem distribusi daya.</p>
         </div>
@@ -72,7 +72,7 @@
     </div>
   </footer>
 
-  <!-- AOS JS -->
+  <!-- AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -80,5 +80,6 @@
       once: true
     });
   </script>
+
 </body>
 </html>
