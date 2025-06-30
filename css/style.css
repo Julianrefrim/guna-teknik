@@ -91,16 +91,19 @@ body {
 .about {
   padding: 4rem 1rem;
   background-color: #ffffff;
-  text-align: justify;
+  text-align: center;
 }
 .about h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .about p {
+  text-align: justify;
   max-width: 800px;
   margin: auto;
   font-size: 1.1rem;
+  line-height: 1.8;
 }
 /* #endregion */
 
