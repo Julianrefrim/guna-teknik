@@ -1,0 +1,151 @@
+/* #region Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+  color: #333;
+}
+/* #endregion */
+
+/* #region Navbar */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-menu li a:hover {
+  color: #0077cc;
+}
+/* #endregion */
+
+/* #region Hero */
+.hero {
+  background: url('../image/hero.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+/* #endregion */
+
+/* #region About */
+.about {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+.about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.about p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+/* #endregion */
+
+/* #region Layanan */
+.layanan {
+  padding: 4rem 2rem;
+  background: #f0f2f5;
+}
+.layanan h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.layanan-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.layanan-item {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.layanan-item:hover {
+  transform: translateY(-5px);
+}
+.layanan-item h3 {
+  margin-bottom: 0.5rem;
+  color: #0077cc;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+  background: #0a192f;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+/* #endregion */
+
+/* #region Responsive */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .layanan-grid {
+    flex-direction: column;
+  }
+}
+/* #endregion */
