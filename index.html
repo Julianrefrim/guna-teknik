@@ -4,98 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PT Guna Teknik Perkasa</title>
-
-  <!-- Google Fonts dan Style -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Script Hamburger Menu -->
-  <script>
-  const toggleBtn = document.getElementById('nav-toggle');
-  const nav = document.getElementById('nav');
-
-  toggleBtn.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
-
-    <!-- Navbar -->
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo-area">
       <a href="index.html" class="logo-link">
-        <img src="image/logo.png" alt="Logo PT Guna Teknik Perkasa" class="logo-img">
-        <span class="logo-text">
-          <strong>PT GUNA TEKNIK PERKASA</strong><br>
-          <small>Electrical Construction Company</small>
-        </span>
+        <img src="image/logo.png" alt="Logo" class="logo-img">
+        <div class="logo-text">
+          <strong>GUNA TEKNIK PERKASA</strong><br>
+          <small>Electrical Construction</small>
+        </div>
       </a>
     </div>
-    <button class="nav-toggle" id="nav-toggle">&#9776;</button>
-    <nav class="nav" id="nav">
-      <ul class="nav-menu">
-        <li><a href="index.html" class="active">Beranda</a></li>
-        <li><a href="tentang.html">Tentang</a></li>
-        <li><a href="proyek.html">Proyek</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-      </ul>
+    <nav class="nav-menu">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="proyek.html">Proyek</a>
+      <a href="kontak.html">Kontak</a>
     </nav>
   </header>
-    <main>
 
-    <!-- Hero Section -->
-    <section class="hero" aria-label="Hero">
-      <h1>KONTRAKTOR LISTRIK TERKEMUKA</h1>
-      <p>Solusi kelistrikan untuk industri dan bangunan sejak 2012</p>
-      <a href="tentang.html" class="cta">Tentang Kami</a>
-    </section>
-    
-    <!-- Layanan Section -->
-    <section class="layanan" aria-label="Layanan Perusahaan">
-      <div class="layanan-container">
-        <div class="layanan-text">
-          <h2>LAYANAN</h2>
-          <p>
-            Dari desain, fabrikasi, konstruksi hingga diagnostik, perawatan, dan perbaikan,
-            kami menyediakan solusi untuk semua kebutuhan kelistrikan industri Anda.
-          </p>
-        </div>
-        <div class="layanan-image">
-          <img src="image/layanan.png" alt="Gambar ilustrasi layanan kelistrikan">
-        </div>
-      </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Solusi Profesional untuk Kebutuhan Listrik Industri Anda</h1>
+      <p>Berpengalaman sejak 2012 dalam proyek-proyek listrik skala besar</p>
+      <a href="tentang.html" class="cta">Pelajari Lebih Lanjut</a>
+    </div>
+  </section>
 
-    <!-- Proyek Section -->
-    <section class="project-preview" aria-label="Project Preview">
-      <h2>PROJECT PREVIEW</h2>
-      <p class="subtitle">Berikut project yang sudah kami selesaikan</p>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="image/sutet.png" alt="Proyek Wilmar Group" class="sutet-img">
-          <h3>WILMAR GROUP</h3>
-        </div>
-      </div>
-      <a href="proyek.html" class="cta">Lihat Semua Proyek</a>
-    </section>
-  </main>
-
-  <!-- Kontak Section -->
-  <section class="page-section" aria-label="Kontak">
-  <h2>Hubungi Kami</h2>
-  <div class="contact-info">
-    <p><strong>📍 Alamat:</strong> Pondok Cilegon Indah Blok C 59 No. 19, RT/RW 004/007</p>
-    <p>Harjatani, Kramatwatu, Serang, Banten 42161</p>
-    <p><strong>📞 Telepon:</strong> 0254-3883897</p>
-    <p><strong>📧 Email:</strong> <a href="mailto:gunateknikperkasa01@gmail.com">gunateknikperkasa01@gmail.com</a></p>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>PT Guna Teknik Perkasa</h3>
+      <p>Solusi kelistrikan untuk industri dan bangunan sejak 2012.</p>
+    </div>
+    <div class="footer-links">
+      <a href="tentang.html">Tentang</a>
+      <a href="proyek.html">Proyek</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
   </div>
-</section>
-
-  <!-- Footer -->
-  <footer>
+  <div class="footer-bottom">
     <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
