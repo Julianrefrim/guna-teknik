@@ -91,7 +91,7 @@ body {
 .about {
   padding: 4rem 1rem;
   background-color: #ffffff;
-  text-align: center;
+  text-align: justify;
 }
 .about h2 {
   font-size: 2rem;
