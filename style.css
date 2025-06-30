@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   background-color: #f5f7fa;
   color: #333;
@@ -77,32 +77,46 @@ body {
 
 /* #region hero.css */
 .hero {
-  text-align: center;
-  padding: 5rem 2rem;
+  padding: 8rem 2rem;
   background: linear-gradient(to right, #0077cc, #003d66);
   color: white;
+  text-align: center;
+  position: relative;
 }
+
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
 }
+
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
+
 .cta {
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   background-color: #ffffff;
   color: #0077cc;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s, color 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .cta:hover {
   background-color: #005fa3;
   color: white;
+  transform: scale(1.05);
 }
 /* #endregion */
 
