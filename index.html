@@ -4,87 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PT Guna Teknik Perkasa</title>
-
-  <!-- Font dan CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 
-  <!-- #region Navbar -->
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="logo-area">
-      <a href="index.html" class="logo-link">
-        <img src="image/logo.png" alt="Logo PT Guna Teknik Perkasa" class="logo-img" />
-        <span class="logo-text">
-          <strong>PT GUNA TEKNIK PERKASA</strong><br>
-          <small>Electrical Construction Company</small>
-        </span>
-      </a>
+    <div class="container">
+      <div class="logo">PT Guna Teknik Perkasa</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="active">Beranda</a></li>
-        <li><a href="tentang.html">Tentang</a></li>
-        <li><a href="proyek.html">Proyek</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-      </ul>
-    </nav>
   </header>
-  <!-- #endregion -->
 
-  <!-- #region Hero Slider -->
-  <section class="hero-slider">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="image/slide1.jpg" alt="Slide 1">
-          <div class="slide-caption">
-            <h1>Solusi Kelistrikan Profesional</h1>
-            <p>Kami melayani instalasi listrik industri dan komersial sejak 2012</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="image/slide2.jpg" alt="Slide 2">
-          <div class="slide-caption">
-            <h1>Proyek Berkualitas</h1>
-            <p>Komitmen kami adalah memberikan hasil terbaik untuk setiap proyek</p>
-          </div>
-        </div>
-      </div>
-      <!-- Controls -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Solusi Konstruksi Elektrikal Profesional</h1>
+      <p>Memberikan layanan kelistrikan terbaik untuk industri dan bangunan sejak 2012</p>
     </div>
   </section>
-  <!-- #endregion -->
 
-  <!-- #region Footer -->
-  <footer>
-    <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
+  <!-- Tentang Kami -->
+  <section class="about" id="tentang">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>PT Guna Teknik Perkasa merupakan perusahaan yang bergerak di bidang kontraktor listrik, melayani proyek skala industri, komersial, dan bangunan umum.</p>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section class="layanan" id="layanan">
+    <div class="container">
+      <h2>Layanan Kami</h2>
+      <div class="layanan-grid">
+        <div class="layanan-item">
+          <h3>Instalasi Listrik</h3>
+          <p>Pemasangan sistem kelistrikan untuk industri dan bangunan komersial.</p>
+        </div>
+        <div class="layanan-item">
+          <h3>Pemeliharaan</h3>
+          <p>Perawatan dan perbaikan sistem listrik untuk mencegah kerusakan.</p>
+        </div>
+        <div class="layanan-item">
+          <h3>Panel & Distribusi</h3>
+          <p>Pembuatan panel listrik dan sistem distribusi daya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <div class="container">
+      <p>&copy; 2025 PT Guna Teknik Perkasa</p>
+    </div>
   </footer>
-  <!-- #endregion -->
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
-  </script>
 </body>
 </html>
