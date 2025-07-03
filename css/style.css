@@ -95,7 +95,36 @@ main {
 }
 /* #endregion */
 
-/* #region Tentang */
+/* #region Tentang Kami (for index.html) */
+.about-preview {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-preview p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+.about-preview .cta {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.about-preview .cta:hover {
+  background-color: #005fa3;
+}
+/* #endregion */
+
+/* #region Tentang (for tentang.html) */
 .about {
   padding: 4rem 1rem;
   background-color: #ffffff;
@@ -108,34 +137,32 @@ main {
 .about p {
   text-align: justify;
   max-width: 800px;
-  margin: 0 auto 1.2rem;
+  margin: auto;
   font-size: 1.1rem;
   line-height: 1.8;
 }
+/* #endregion */
+
+/* #region Visi Misi (tambahan untuk tentang.html) */
 .visi-misi {
   padding: 4rem 1rem;
-  background-color: #f9f9f9;
-}
-.visi-misi h2 {
-  font-size: 2rem;
+  background-color: #f1f5f9;
   text-align: center;
-  margin-bottom: 2rem;
 }
 .visi-misi h3 {
-  font-size: 1.4rem;
-  margin-top: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
   color: #0077cc;
 }
-.visi-misi p, .visi-misi ul {
-  max-width: 800px;
-  margin: 1rem auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: justify;
-}
 .visi-misi ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.visi-misi ul li {
+  margin-bottom: 0.8rem;
 }
 /* #endregion */
 
