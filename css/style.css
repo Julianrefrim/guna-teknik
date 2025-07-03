@@ -112,6 +112,31 @@ main {
   font-size: 1.1rem;
   line-height: 1.8;
 }
+.visi-misi {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+}
+.visi-misi h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.visi-misi h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: #0077cc;
+}
+.visi-misi p, .visi-misi ul {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+.visi-misi ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
 /* #endregion */
 
 /* #region Layanan */
