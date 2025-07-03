@@ -96,31 +96,22 @@ main {
 /* #endregion */
 
 /* #region About Preview */
-.about-preview {
+/* #region Tentang */
+.about {
   padding: 4rem 1rem;
   background-color: #ffffff;
   text-align: center;
 }
-.about-preview h2 {
+.about h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.about-preview p {
+.about p {
+  text-align: justify;
   max-width: 800px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.2rem;
   font-size: 1.1rem;
-}
-.about-preview .cta {
-  display: inline-block;
-  background-color: #0077cc;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-.about-preview .cta:hover {
-  background-color: #005fa3;
+  line-height: 1.8;
 }
 /* #endregion */
 
