@@ -292,6 +292,28 @@ main {
 }
 /* #endregion */
 
+/* #region Project Group (Untuk Kelompok Gambar di proyek-detail.html) */
+.project-group {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.project-group h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #0a192f;
+}
+.project-group p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.project-group .project-gallery {
+  margin-top: 1rem;
+}
+/* #endregion */
+
 /* #region Footer */
 footer {
   background: #0a192f;
