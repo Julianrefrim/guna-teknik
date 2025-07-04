@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Permata Dunia Sukses Utama - PT Guna Teknik Perkasa</title>
+  <title>Proyek - PT Permata Dunia Sukses Utama</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -30,36 +30,32 @@
 
   <!-- Konten Proyek -->
   <main>
-    <section class="project-detail" data-aos="fade-up">
-      <div class="container">
-        <h2>PT. Permata Dunia Sukses Utama</h2>
-        <p class="subtitle">Berikut proyek yang sudah kita kerjakan di perusahaan.</p>
+    <section class="project-detail container" data-aos="fade-up">
+      <h2>PT. Permata Dunia Sukses Utama</h2>
 
-        <!-- Grup Proyek 1 -->
-        <div class="project-group" data-aos="fade-up">
-          <h3 class="subgroup-title">Instalasi Panel Kontrol dan Terminasi Fire Alarm</h3>
-          <p class="subgroup-desc">
-            Tim kami mengerjakan penarikan kabel, terminasi sistem proteksi kebarakan, dan konfigurasi panel untuk sistem kontrol monitoring fire alarm.
-          </p>
+      <!-- Tampilan Awal -->
+      <div class="project-preview-summary">
+        <img src="image/PDSU-1.png" alt="Preview Proyek" loading="lazy">
+        <h3>Instalasi Panel & Fire Alarm</h3>
+        <p>Instalasi panel kontrol, penarikan kabel tray, dan sistem proteksi kebakaran di area pabrik utama.</p>
+      </div>
+
+      <!-- Detail Interaktif -->
+      <details class="project-detail-toggle">
+        <summary>Lihat Dokumentasi Lengkap</summary>
+        <div class="project-detail-content">
+          <p>Tim kami bertanggung jawab untuk pengadaan dan instalasi sistem kelistrikan termasuk konfigurasi panel, jalur kabel tray, dan konektivitas sistem fire alarm di fasilitas PT. Permata Dunia Sukses Utama.</p>
+
           <div class="project-gallery">
-            <img src="image/PDSU-1.png" alt="Pemasangan panel 1" class="modal-trigger" data-caption="Pemasangan Panel Utama">
-            <img src="image/PDSU-2.png" alt="Pemasangan panel 2" class="modal-trigger" data-caption="Konfigurasi Panel Sistem">
-            <img src="image/PDSU-3.png" alt="Penarikan kabel 1" class="modal-trigger" data-caption="Penarikan Kabel Listrik">
-            <img src="image/PDSU-4.png" alt="Fire alarm 2" class="modal-trigger" data-caption="Instalasi Fire Alarm">
+            <img src="image/PDSU-1.png" alt="Pemasangan Panel">
+            <img src="image/PDSU-2.png" alt="Panel Kontrol">
+            <img src="image/PDSU-3.png" alt="Kabel Tray">
+            <img src="image/PDSU-4.png" alt="Fire Alarm">
           </div>
         </div>
-      </div>
+      </details>
     </section>
   </main>
-
-  <!-- Modal -->
-  <div class="modal" id="imgModal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img id="modalImage" src="" alt="Detail gambar" />
-      <p id="modalCaption"></p>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer>
@@ -72,32 +68,6 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
-  </script>
-
-  <!-- JavaScript Modal Gambar -->
-  <script>
-    const modal = document.getElementById("imgModal");
-    const modalImg = document.getElementById("modalImage");
-    const caption = document.getElementById("modalCaption");
-    const closeBtn = document.querySelector(".modal .close");
-
-    document.querySelectorAll(".modal-trigger").forEach(img => {
-      img.addEventListener("click", function () {
-        modal.style.display = "flex";
-        modalImg.src = this.src;
-        caption.innerText = this.dataset.caption;
-      });
-    });
-
-    closeBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    window.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
-    });
   </script>
 
 </body>
