@@ -255,6 +255,33 @@ main {
   padding: 1rem;
   font-size: 1.2rem;
 }
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.filter-btn {
+  background: #e0e0e0;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.4rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #0077cc;
+  color: white;
+}
+
+.project-card {
+  display: none;
+}
+.project-card.show {
+  display: block;
+}
+
 /* #endregion */
 
 /* #region Footer */
