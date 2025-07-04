@@ -143,7 +143,7 @@ main {
 }
 /* #endregion */
 
-/* #region Visi Misi (tambahan untuk tentang.html) */
+/* #region Visi Misi */
 .visi-misi {
   padding: 4rem 1rem;
   background-color: #f1f5f9;
@@ -212,7 +212,7 @@ main {
 }
 /* #endregion */
 
-/* #region Proyek */
+/* #region Proyek Preview */
 .project-preview {
   padding: 4rem 1rem;
   background-color: #ffffff;
@@ -262,7 +262,7 @@ main {
 }
 /* #endregion */
 
-/* #region Project Detail */
+/* #region Project Detail & Group */
 .project-detail {
   padding: 4rem 1rem;
   background-color: #ffffff;
@@ -279,6 +279,25 @@ main {
   font-size: 1.1rem;
   line-height: 1.8;
 }
+.project-group {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+.project-group h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0a192f;
+  margin-bottom: 0.5rem;
+}
+.project-group p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -287,30 +306,13 @@ main {
 }
 .project-gallery img {
   width: 300px;
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
-/* #endregion */
-
-/* #region Project Group (Untuk Kelompok Gambar di proyek-detail.html) */
-.project-group {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.project-group h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: #0a192f;
-}
-.project-group p {
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-}
-.project-group .project-gallery {
-  margin-top: 1rem;
+.project-gallery img:hover {
+  transform: scale(1.03);
 }
 /* #endregion */
 
@@ -333,11 +335,15 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
-  .layanan-grid {
+  .layanan-grid,
+  .project-gallery {
     flex-direction: column;
     align-items: center;
   }
   .project-card {
+    width: 90%;
+  }
+  .project-gallery img {
     width: 90%;
   }
 }
