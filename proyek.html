@@ -14,7 +14,7 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="image/logo.png" alt="Logo PT Guna Teknik Perkasa" class="logo-img" />
+        <img src="image/logo.png" alt="Logo" class="logo-img" />
         <span class="logo-text">PT Guna Teknik Perkasa</span>
       </a>
       <nav>
@@ -34,30 +34,40 @@
       <h2>Proyek Kami</h2>
       <p class="subtitle">Berikut adalah beberapa proyek yang telah kami kerjakan:</p>
 
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="panel">Panel</button>
+        <button class="filter-btn" data-filter="lampu">Lampu</button>
+        <button class="filter-btn" data-filter="tray">Tray</button>
+        <button class="filter-btn" data-filter="sutet">SUTET</button>
+      </div>
+
+      <!-- Grid Proyek -->
       <div class="project-grid">
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-          <img src="image/sutet.png" alt="Pemasangan SUTET Wilmar Group" loading="lazy" />
-          <h3>Proyek SUTET Wilmar Group</h3>
+        <div class="project-card sutet show" data-aos="zoom-in" data-aos-delay="100">
+          <img src="image/sutet.png" alt="Wilmar Group" />
+          <h3>Wilmar Group</h3>
         </div>
 
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-          <img src="image/1.png" alt="Instalasi Panel Tegangan Rendah" loading="lazy" />
-          <h3>Instalasi Panel Tegangan Rendah</h3>
+        <div class="project-card panel show" data-aos="zoom-in" data-aos-delay="200">
+          <img src="image/1.png" alt="PT. Permata Dunia Sukses Utama" />
+          <h3>PT. Permata Dunia Sukses Utama</h3>
         </div>
 
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-          <img src="image/2.png" alt="Pemasangan Kabel Tray dan Ladder" loading="lazy" />
-          <h3>Pemasangan Kabel Tray & Ladder</h3>
+        <div class="project-card tray show" data-aos="zoom-in" data-aos-delay="300">
+          <img src="image/2.png" alt="PT. Jawamanis Rafinasi" />
+          <h3>PT. Jawamanis Rafinasi</h3>
         </div>
 
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
-          <img src="image/3.png" alt="Pemasangan Sistem Penerangan Area Produksi" loading="lazy" />
-          <h3>Sistem Penerangan Area Produksi</h3>
+        <div class="project-card lampu show" data-aos="zoom-in" data-aos-delay="400">
+          <img src="image/3.png" alt="PT. Permata Food Indonesia" />
+          <h3>PT. Permata Food Indonesia</h3>
         </div>
 
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
-          <img src="image/4.png" alt="Distribusi Panel dan Panel MDP" loading="lazy" />
-          <h3>Distribusi Panel & Panel MDP</h3>
+        <div class="project-card panel show" data-aos="zoom-in" data-aos-delay="500">
+          <img src="image/4.png" alt="PT. Tereos FKS Indonesia " />
+          <h3>PT. Tereos FKS Indonesia </h3>
         </div>
       </div>
     </div>
@@ -74,6 +84,32 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <!-- Filter Script -->
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    function filterProjects(category) {
+      projectCards.forEach(card => {
+        card.classList.remove('show');
+        if (category === 'all' || card.classList.contains(category)) {
+          card.classList.add('show');
+        }
+      });
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active')?.classList.remove('active');
+        btn.classList.add('active');
+        filterProjects(btn.getAttribute('data-filter'));
+      });
+    });
+
+    // Tampilkan semua saat pertama dibuka
+    filterProjects('all');
   </script>
 
 </body>
