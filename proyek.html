@@ -32,43 +32,40 @@
   <section class="project-preview" data-aos="fade-up">
     <div class="container">
       <h2>Proyek Kami</h2>
-      <p class="subtitle">Berikut adalah beberapa proyek yang telah kami kerjakan:</p>
+      <p class="subtitle">Berikut proyek yang sudah kami kerjakan.</p>
 
-      <!-- Filter Buttons -->
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">Semua</button>
-        <button class="filter-btn" data-filter="panel">Panel</button>
-        <button class="filter-btn" data-filter="lampu">Lampu</button>
-        <button class="filter-btn" data-filter="tray">Tray</button>
-        <button class="filter-btn" data-filter="sutet">SUTET</button>
-      </div>
-
-      <!-- Grid Proyek -->
       <div class="project-grid">
-        <div class="project-card sutet show" data-aos="zoom-in" data-aos-delay="100">
-          <img src="image/sutet.png" alt="Wilmar Group" />
-          <h3>Wilmar Group</h3>
-        </div>
 
-        <div class="project-card panel show" data-aos="zoom-in" data-aos-delay="200">
-          <img src="image/1.png" alt="PT. Permata Dunia Sukses Utama" />
+        <a href="proyek-detail-1.html" class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="image/sutet.png" alt="PT. Permata Dunia Sukses Utama" />
           <h3>PT. Permata Dunia Sukses Utama</h3>
-        </div>
+        </a>
 
-        <div class="project-card tray show" data-aos="zoom-in" data-aos-delay="300">
+        <a href="proyek-detail-2.html" class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="image/1.png" alt="PT. Multimas Nabati Asahan" />
+          <h3>PT. Multimas Nabati Asahan</h3>
+        </a>
+
+        <a href="proyek-detail-3.html" class="project-card" data-aos="zoom-in" data-aos-delay="300">
           <img src="image/2.png" alt="PT. Jawamanis Rafinasi" />
           <h3>PT. Jawamanis Rafinasi</h3>
-        </div>
+        </a>
 
-        <div class="project-card lampu show" data-aos="zoom-in" data-aos-delay="400">
+        <a href="proyek-detail-4.html" class="project-card" data-aos="zoom-in" data-aos-delay="400">
           <img src="image/3.png" alt="PT. Permata Food Indonesia" />
           <h3>PT. Permata Food Indonesia</h3>
-        </div>
+        </a>
 
-        <div class="project-card panel show" data-aos="zoom-in" data-aos-delay="500">
-          <img src="image/4.png" alt="PT. Tereos FKS Indonesia " />
-          <h3>PT. Tereos FKS Indonesia </h3>
-        </div>
+        <a href="proyek-detail-5.html" class="project-card" data-aos="zoom-in" data-aos-delay="500">
+          <img src="image/4.png" alt="PT. Tereos Fks" />
+          <h3>PT. Tereos Fks</h3>
+        </a>
+
+        <a href="proyek-detail-6.html" class="project-card" data-aos="zoom-in" data-aos-delay="500">
+          <img src="image/4.png" alt="PT. Tereos Fks" />
+          <h3>PT. Tereos Fks</h3>
+        </a>
+
       </div>
     </div>
   </section>
@@ -83,33 +80,10 @@
   <!-- AOS Script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-
-  <!-- Filter Script -->
-  <script>
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    function filterProjects(category) {
-      projectCards.forEach(card => {
-        card.classList.remove('show');
-        if (category === 'all' || card.classList.contains(category)) {
-          card.classList.add('show');
-        }
-      });
-    }
-
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelector('.filter-btn.active')?.classList.remove('active');
-        btn.classList.add('active');
-        filterProjects(btn.getAttribute('data-filter'));
-      });
+    AOS.init({
+      duration: 1000,
+      once: true
     });
-
-    // Tampilkan semua saat pertama dibuka
-    filterProjects('all');
   </script>
 
 </body>
