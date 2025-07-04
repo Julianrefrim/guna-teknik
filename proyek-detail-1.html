@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Proyek Detail - PT Guna Teknik Perkasa</title>
+  <title>Detail Proyek - PT Guna Teknik Perkasa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -28,30 +27,29 @@
     </div>
   </header>
 
-  <!-- Konten Proyek -->
-  <main>
-    <section class="project-intro">
-      <div class="container">
-        <div class="project-preview-card" onclick="showDetail()">
-          <img src="image/PDSU-preview.png" alt="Preview Proyek" loading="lazy">
-          <h3>PT. Permata Dunia Sukses Utama</h3>
-        </div>
-
-        <div id="project-detail-content" class="project-detail-hidden">
-          <h4>Instalasi Panel Kontrol dan Terminasi Fire Alarm</h4>
-          <p>
-            Tim kami mengerjakan penarikan kabel, terminasi sistem proteksi kebakaran, dan konfigurasi panel untuk sistem kontrol monitoring fire alarm.
-          </p>
-          <div class="project-gallery">
-            <img src="image/PDSU-1.png" alt="PDSU 1" loading="lazy">
-            <img src="image/PDSU-2.png" alt="PDSU 2" loading="lazy">
-            <img src="image/PDSU-3.png" alt="PDSU 3" loading="lazy">
-            <img src="image/PDSU-4.png" alt="PDSU 4" loading="lazy">
-          </div>
-        </div>
+  <!-- Project Intro -->
+  <section class="project-intro">
+    <div class="container">
+      <div class="project-preview-card" id="openProject">
+        <img src="image/PDSU-1.png" alt="Preview Proyek">
+        <h3>PT. Permata Dunia Sukses Utama</h3>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Project Detail Hidden -->
+  <section id="project-detail-content" class="container">
+    <h4>Instalasi Panel & Sistem Fire Alarm</h4>
+    <p>
+      Tim kami mengerjakan penarikan kabel, terminasi sistem proteksi kebakaran, dan konfigurasi panel untuk sistem kontrol monitoring fire alarm.
+    </p>
+    <div class="project-gallery">
+      <img src="image/PDSU-1.png" alt="Panel 1">
+      <img src="image/PDSU-2.png" alt="Panel 2">
+      <img src="image/PDSU-3.png" alt="Kabel Fire Alarm 1">
+      <img src="image/PDSU-4.png" alt="Kabel Fire Alarm 2">
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -60,16 +58,5 @@
     </div>
   </footer>
 
-  <!-- Script -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-
-    function showDetail() {
-      const detail = document.getElementById("project-detail-content");
-      detail.classList.add("project-detail-shown");
-      detail.classList.remove("project-detail-hidden");
-    }
-  </script>
 </body>
 </html>
