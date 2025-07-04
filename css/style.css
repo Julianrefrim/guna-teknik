@@ -240,6 +240,8 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
 }
 .project-card:hover {
   transform: translateY(-5px);
@@ -255,31 +257,8 @@ main {
   padding: 1rem;
   font-size: 1.2rem;
 }
-.filter-buttons {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.filter-btn {
-  background: #e0e0e0;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  margin: 0 0.4rem;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-.filter-btn:hover,
-.filter-btn.active {
-  background-color: #0077cc;
-  color: white;
-}
-
-.project-card {
-  display: none;
-}
-.project-card.show {
-  display: block;
+.project-card:hover h3 {
+  color: #0077cc;
 }
 /* #endregion */
 
