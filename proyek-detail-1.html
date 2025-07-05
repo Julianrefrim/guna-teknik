@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Proyek - PT Guna Teknik Perkasa</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Detail Proyek - PT Guna Teknik Perkasa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -27,35 +27,28 @@
     </div>
   </header>
 
-  <!-- Project Grid -->
-  <section class="project-detail-grid container">
-    <h2>Proyek Kami</h2>
-    <div class="project-detail-grid-wrapper">
+  <!-- Grid Proyek -->
+  <section class="project-detail-grid">
+    <div class="container">
+      <h2>Proyek Kami</h2>
+      <div class="project-detail-grid-wrapper">
 
-      <!-- Proyek 1 -->
-      <div class="project-card">
-        <img src="image/PDSU-1.png" alt="Preview Proyek" />
-        <div class="project-card-content">
-          <h3>Instalasi panel dan sistem fire alarm.</h3>
-          
-          <!-- Galeri kecil -->
-          <div class="mini-gallery">
-            <img src="image/PDSU-2.png" alt="Gambar tambahan 1" />
-            <img src="image/PDSU-3.png" alt="Gambar tambahan 2" />
-            <img src="image/PDSU-4.png" alt="Gambar tambahan 3" />
+        <!-- Proyek 1 -->
+        <div class="project-card" onclick="toggleDetail(this)">
+          <img src="image/PDSU-1.png" alt="PT. Permata Dunia Sukses Utama" />
+          <div class="project-card-content">
+            <h3>Instalasi panel dan sistem fire alarm.</h3>
+            <div class="project-card-gallery">
+              <img src="image/PDSU-2.png" alt="Gallery 1" />
+              <img src="image/PDSU-3.png" alt="Gallery 2" />
+              <img src="image/PDSU-4.png" alt="Gallery 3" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Proyek 2 -->
-      <div class="project-card">
-        <img src="image/project2.jpg" alt="Proyek Jembatan XYZ" />
-        <div class="project-card-content">
-          <h3>Proyek Jembatan XYZ</h3>
-          <p>Pekerjaan sistem kelistrikan dan grounding.</p>
-        </div>
+        <!-- Tambah Proyek lainnya dengan format sama -->
+
       </div>
-      <!-- Tambahkan proyek lain di sini -->
     </div>
   </section>
 
@@ -66,5 +59,6 @@
     </div>
   </footer>
 
+  <script src="js/project-toggle.js"></script>
 </body>
 </html>
