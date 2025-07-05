@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Detail Proyek - PT Guna Teknik Perkasa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <title>Proyek Detail - PT Guna Teknik Perkasa</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -32,33 +31,62 @@
     <div class="container">
       <h2>Proyek Kami</h2>
       <div class="project-detail-grid-wrapper">
-
         <!-- Proyek 1 -->
-        <div class="project-card" onclick="toggleDetail(this)">
+        <div class="project-card" data-id="fire-alarm">
           <img src="image/PDSU-1.png" alt="PT. Permata Dunia Sukses Utama" />
           <div class="project-card-content">
-            <h3>Instalasi panel dan sistem fire alarm.</h3>
-            <div class="project-card-gallery">
-              <img src="image/PDSU-2.png" alt="Gallery 1" />
-              <img src="image/PDSU-3.png" alt="Gallery 2" />
-              <img src="image/PDSU-4.png" alt="Gallery 3" />
-            </div>
+            <h3>Instalasi panel dan sistem fire alarm</h3>
           </div>
         </div>
 
-        <!-- Tambah Proyek lainnya dengan format sama -->
-
+        <!-- Proyek 2 (contoh) -->
+        <div class="project-card" data-id="plc-control">
+          <img src="image/PLC-1.png" alt="PLC Control System" />
+          <div class="project-card-content">
+            <h3>Instalasi & Programming PLC</h3>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Detail Proyek: Fire Alarm -->
+  <div class="container">
+    <div class="project-detail-panel" id="fire-alarm">
+      <h4>Detail Proyek - Fire Alarm</h4>
+      <p>
+        Tim kami mengerjakan instalasi panel kontrol dan sistem proteksi kebakaran untuk PT. Permata Dunia Sukses Utama.
+      </p>
+      <div class="project-gallery">
+        <img src="image/PDSU-1.png" alt="PDSU 1" />
+        <img src="image/PDSU-2.png" alt="PDSU 2" />
+        <img src="image/PDSU-3.png" alt="PDSU 3" />
+        <img src="image/PDSU-4.png" alt="PDSU 4" />
+      </div>
+    </div>
+
+    <!-- Detail Proyek: PLC -->
+    <div class="project-detail-panel" id="plc-control">
+      <h4>Detail Proyek - PLC Control</h4>
+      <p>
+        Kami melakukan konfigurasi dan instalasi sistem PLC Siemens untuk pengendalian otomatisasi di industri kimia.
+      </p>
+      <div class="project-gallery">
+        <img src="image/PLC-1.png" alt="PLC 1" />
+        <img src="image/PLC-2.png" alt="PLC 2" />
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 PT Guna Teknik Perkasa, All rights reserved</p>
+      <p>&copy; 2025 PT Guna Teknik Perkasa. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Script JS -->
   <script src="js/project-toggle.js"></script>
+
 </body>
 </html>

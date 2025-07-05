@@ -366,6 +366,10 @@ main {
 .project-detail-grid .project-card:hover {
   transform: translateY(-5px);
 }
+.project-detail-panel {
+  display: none;
+  margin-top: 3rem;
+}
 /* #endregion */
 
 /* #region Mini gallery inside project card */
