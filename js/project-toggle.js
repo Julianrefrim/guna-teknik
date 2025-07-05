@@ -6,16 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     card.addEventListener("click", () => {
       const id = card.getAttribute("data-id");
 
-      // Sembunyikan semua panel
       panels.forEach(panel => {
         panel.style.display = "none";
       });
 
-      // Tampilkan yang dipilih
       const targetPanel = document.getElementById(id);
       if (targetPanel) {
         targetPanel.style.display = "block";
-        targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+        targetPanel.scrollIntoView({ behavior: "smooth" });
       }
     });
   });
